@@ -25,6 +25,9 @@ public class Csvtes {
 					System.out.println(line);
 					
 				}
+				
+				bufferedReader.close();
+				
 			} catch (IOException e) {
 				System.out.println(e);
 			}
