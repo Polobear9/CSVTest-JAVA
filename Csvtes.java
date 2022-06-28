@@ -10,9 +10,9 @@ public class Csvtes {
 		
 		String fileName = "BD.csv";
 				
-		File file = new File(fileName);
+		File CSVfile = new File(fileName);
 		
-		if(!file.exists()) {
+		if(!CSVfile.exists()) {
 			System.out.print("File is not ture");
 			return;
 		}
@@ -21,11 +21,9 @@ public class Csvtes {
 				 BufferedReader bufferedReader = new BufferedReader(fileReader)) {
 				String line;
 				while ((line = bufferedReader.readLine()) != null) {
-					String[] arrayStr = line.split(",");
-
-					for (String str : arrayStr) {
-						System.out.println(str);
-					}
+					
+					System.out.println(line);
+					
 				}
 			} catch (IOException e) {
 				System.out.println(e);
